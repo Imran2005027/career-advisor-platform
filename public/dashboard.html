@@ -1,0 +1,62 @@
+<!-- public/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Advisor - Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Career Advisor </div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="dashboard-container">
+    <div class="tabs">
+      <button class="tab-link active" data-tab="roadmapTab">Career Roadmap</button>
+      <button class="tab-link" data-tab="jobSearchTab">Job Search</button>
+      <button class="tab-link" data-tab="savedTab">Saved Items</button>
+    </div>
+    <!-- Roadmap Generation Section -->
+    <section id="roadmapTab" class="tab-content active">
+      <h2>Generate Your Career Roadmap</h2>
+      <form id="roadmapForm">
+        <input type="text" id="careerGoal" placeholder="Career Goal" required />
+        <button type="submit">Generate Roadmap</button>
+      </form>
+      <div id="roadmapResult"></div>
+      <button id="saveRoadmap">Save Roadmap</button>
+    </section>
+    <!-- Job Search Section -->
+    <section id="jobSearchTab" class="tab-content">
+      <h2>Find Related Jobs</h2>
+      <form id="jobSearchForm">
+        <input type="text" id="jobCareerGoal" placeholder="Career Goal" required />
+        <input type="text" id="location" placeholder="Location (e.g., Tamilnadu, India)" />
+        <button type="submit">Search Jobs</button>
+      </form>
+      <div id="jobResults"></div>
+      <button id="saveJob">Save Job Results</button>
+    </section>
+    <!-- Saved Items Section -->
+    <section id="savedTab" class="tab-content">
+      <h2>Your Saved Items</h2>
+      <div id="savedItems">
+        <!-- Saved roadmaps and jobs will be loaded here -->
+      </div>
+      <button id="clearSaved">Clear Saved Items</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Career Advisor . All rights reserved.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

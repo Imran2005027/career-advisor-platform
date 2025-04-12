@@ -1,0 +1,257 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links a:hover {
+  color: #ddd;
+}
+/* Hero section for index page */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background: #667eea;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background: #5a67d8;
+}
+
+/* Form container for login and register */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+}
+.form-container form input, 
+.form-container form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-container form button {
+  background: #667eea;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.form-container form button:hover {
+  background: #5a67d8;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.tab-link.active,
+.tab-link:hover {
+  background: #667eea;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Enhanced Input Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+  outline: none;
+}
+
+/* Enhanced Button Styling */
+button,
+.btn {
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #667eea;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #5a67d8;
+  transform: scale(1.02);
+}
+
+/* Job and Saved Items Styling */
+.job,
+.saved-item {
+  padding: 10px;
+  margin: 10px 0;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.job h4,
+.saved-item h4 {
+  margin: 0 0 5px;
+}
+
+.job p,
+.saved-item p {
+  margin: 5px 0;
+}
+
+.job a,
+.saved-item a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.job a:hover,
+.saved-item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav .nav-links li {
+    margin-left: 10px;
+  }
+  .dashboard-container {
+    margin: 20px;
+    padding: 15px;
+  }
+}
